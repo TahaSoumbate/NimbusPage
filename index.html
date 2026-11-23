@@ -4,29 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+    <link rel="stylesheet"  href="./tailwind.css" />
     <title>Document</title>
+     <style type="text/tailwindcss">
+    @theme {
+      --color-brand-500: oklch(0.62 0.19 260);
+      --color-brand-600: oklch(0.55 0.21 262);
+      --color-brand-700: oklch(0.48 0.2 264);
+    }
+  </style>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="">
-          <span>N</span>
+    <header class="sticky top-0 z-20 border-b border-slate-200 bg-white/40 backdrop-blur-md">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3" aria-label="Main">
+        <a href="" class="flex items-center gap-2 font-bold">
+          <span class="grid size-8 place-items-center bg-brand-600 rounded-lg text-white">N</span>
           Nimbus
         </a>
-        <div class="">
-          <a href="">Features</a>
-          <a href="">Customers</a>
-          <a href="">Pricing</a>
-          <a href="">Start free</a>
+        <div class="hidden items-center md:flex gap-10 text-sm font-medium">
+          <a href="" class="hover:text-brand-600">Features</a>
+          <a href="" class="hover:text-brand-600">Customers</a>
+          <a href="" class="hover:text-brand-600">Pricing</a>
+          <a href="" class="bg-brand-600 rounded-lg px-4 py-2 text-white hover:bg-brand-700">Start free</a>
         </div>
-        <details>
-          <summary>Menu</summary>
-          <div class="">
-            <a href="">Features</a>
-            <a href="">Customers</a>
-            <a href="">Pricing</a>
-            <a href="">Start free</a>
+        <details class="md:hidden relative">
+          <summary class="cursor-pointer rounded-md list-none px-3 py-1.5 text-sm ring-1 ring-slate-300" >Menu</summary>
+          <div class="absolute mt-2 w-48 p-2 right-0 bg-white shadow-lg rounded-xl ring-1 ring-slate-200 ">
+            <a href="" class="block rounded-md px-3 py-2 hover:bg-slate-100">Features</a>
+            <a href="" class="block rounded-md px-3 py-2 hover:bg-slate-100">Customers</a>
+            <a href="" class="block rounded-md px-3 py-2 hover:bg-slate-100">Pricing</a>
+            <a href="" class="block bg-brand-600 rounded-lg px-3 py-2 text-white hover:bg-brand-700">Start free</a>
           </div>
         </details>
       </nav>

@@ -3,10 +3,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-50: #f0fdf4;
-  --color-brand-600: #16a34a;
-  --color-brand-700: #15803d;
-  --font-display: "Oswald", sans-serif;
-  --radius-card: 1.25rem;
-  --breakpoint-xs: 30rem;
+  --color-brand-500: oklch(0.62 0.19 260);
+  --color-brand-600: oklch(0.55 0.21 262);
+  --color-brand-700: oklch(0.48 0.2 264);
 }
