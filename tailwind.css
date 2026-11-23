@@ -1,0 +1,12 @@
+/* For VS Code Tailwind IntelliSense only: marks this folder as a Tailwind v4 project.
+   The page itself loads Tailwind from the Play CDN, so this file is not linked in index.html. */
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #f0fdf4;
+  --color-brand-600: #16a34a;
+  --color-brand-700: #15803d;
+  --font-display: "Oswald", sans-serif;
+  --radius-card: 1.25rem;
+  --breakpoint-xs: 30rem;
+}
